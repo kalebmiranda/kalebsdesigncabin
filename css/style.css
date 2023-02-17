@@ -1,39 +1,59 @@
 /* #BASE CSS (Initital Setup)
 ---------------------------------
-    #BASE START
-        #HTML5
-    #BASE CONTENT
-        #TYPOGRAPHY
-            #BODY
-            #HELPERS
-        #MEDIA
-            #IMAGES
-            #VIDEOS
-        #COMPONENTS
-            #BUTTONS
-    #BASE LAYOUT
-        #MEDIAQUERIES
-        #CONTAINER
-        #GRID
-    #BASE SITE
-        #SITE STRUCTURE
-            #HEADER
-                #SITE-BRANDING (LOGO)
-            #FOOTER
-            #SECTIONS
-            #SUB PAGES
-        #SITE NAVIGATION
-            #TOGGLE-NAV (Default for Small Screens)
+# GLOBAL RESETS
+# BASE TYPOGRAPHY
+# BUTTONS
+# MEDIA
+    # RESPONSIVE IMAGES
+# LAYOUT
+    # CONTAINER
+    # MEDIA QUERIES
+    # SEMANTIC GRID SYSTEM
+# STRUCTURE
+    # SITE HEADER
+    # SITE NAV
+    # MAIN
+        # SECTIONS
+    # SITE FOOTER
 --------------------------------- */
-/* #HTML5 */
-header,
-section,
-footer,
-aside,
-nav,
-main,
-article,
-figure {
+/* GLOBAL RESETS */
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+/* BASE TYPOGRAPHY */
+
+body {
+  font-size: 100%;
+  line-height: 1.4;
+}
+
+h1, h2, p {
+  margin: 0 0 0.5wm 0;
+}
+
+/* TYPOGRAPHIC SCALE */
+h1 {
+  font-size: 3em;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.1em;
+}
+
+/* RESPONSIVE IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
   /* SITE-HEADER */
   
@@ -61,12 +81,123 @@ figure {
     justify-content: space-evenly;
   }
   
-  body{
-    margin: 0;
+/* SITE-HERO */
+
+.hero {
+  background: black;
+  padding: 6.5vh 1em;
+  display: grid; 
+  place-items: center;
+  min-height: 100vh;
+}
+
+/* THUMBGRID */
+.thumbgrid{
+  margin: 0;
+  padding:0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.thumbgrid li {
+  width: 50%;
+  padding: .25em;
+}
+
+@media (min-width:768px) {
+  .thumbgrid li{
+    width: 33.333%;
   }
+}
+.thumbgrid a {
+  display: block;
+  position: relative;
+}
+
+.thumbgrid a .thumbgrid-caption {
+  opacity: 0;
+}
+
+.thumbgrid a:hover .thumbgrid-caption {
+  opacity: 100;
+  font-family: helvetica;
+  color: white;
+  font-size: 25px;
+  padding: .5em; 
+}
+
+.thumbgrid img {
+  display: block;
+  max-width: none;
+  width: 100%;
   
-  a:hover { 
-    color: #747474;
+}
+
+.thumbgrid a:hover {
+  
+}
+.thumbgrid-caption {
+  position: absolute;
+  top: 0;
+  left:0;
+  background: rgb(0 0 0/.25);
+  width: 100%;
+  height:100%;
+}
+
+.thumbgrid-caption h3 {
+  margin:0;
+  padding:0;
+  font-size: 1em;
+}
+
+.thumbgrid-caption p {
+  margin:.25em 0 .25em 0;
+  padding:0 ;
+  font-size: .75em;
+}
+
+/* PAGE-PORTFOLIOENTRY */
+  .page-portfolioentry {
+    text-align: center;
   }
-  
-  
+
+  .page-portfolioentry h1 {
+    display: inline-block;
+    border: 1px solid black;
+    padding: .5em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  .page-portfolioentry p {
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-portfolioentry img {
+    display: block;
+  }
+
+  .shimmyup-medium {
+    margin-top: -20vw;
+    border: 1px solid red;
+  }
+
+  /* FANCYBOX STYLING */
+
+  .fancybox__content { 
+    padding: 0; 
+    
+  }
+
+  .fancybox__slide { 
+    padding: 2em; 
+  }
+
+  .fancybox__carousel .fancybox__slide.has-iframe .fancybox__content {
+    height: 90%;
+  }
+
