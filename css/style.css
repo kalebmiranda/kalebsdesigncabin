@@ -165,13 +165,25 @@ img {
 
   .page-portfolioentry h1 {
     display: inline-block;
-    border: 1px solid black;
+    border: 3px solid rgb(21 129 186);
     padding: .5em;
     text-transform: uppercase;
     margin-bottom: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color: rgb(21 129 186);
+  }
+
+  .page-portfolioentry h2 {
+    font-family: 'Helvetica 25 UltraLight', sans-serif; 
+    color: rgb(21 129 186);
+    font-weight: 100;
   }
 
   .page-portfolioentry p {
+    font-family: 'Helvetica 25 UltraLight', sans-serif; 
+    color: rgb(21 129 186);
+    font-weight: 100;
     max-width: 40em;
     margin-left: auto;
     margin-right: auto;
@@ -182,8 +194,8 @@ img {
   }
 
   .shimmyup-medium {
-    margin-top: -20vw;
-    border: 1px solid red;
+    margin-top: -15vw;
+    border: 0px solid red;
   }
 
   /* FANCYBOX STYLING */
