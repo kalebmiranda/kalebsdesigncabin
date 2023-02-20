@@ -33,7 +33,7 @@ body {
   line-height: 1.4;
 }
 
-h1, h2, p {
+h1, h2, h3, p {
   margin: 0 0 0.5wm 0;
 }
 
@@ -45,7 +45,12 @@ h1 {
 
 h2 {
   font-size: 2.25em;
-  line-height: 1.1em;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 1.75em;
+  line-height: 1em;
 }
 
 /* RESPONSIVE IMAGES */
@@ -65,7 +70,7 @@ img {
     color: #E1E57D;
     text-decoration: none;
     font-size: 21px;
-    font-family: helvetica;
+    font-family: 'Helvetica Neue', sans-serif;
     font-weight: 500;
   }
   .site-header .site-id{
@@ -175,15 +180,28 @@ img {
   }
 
   .page-portfolioentry h2 {
-    font-family: 'Helvetica 25 UltraLight', sans-serif; 
+    font-family: 'Helvetica Neue', sans-serif;
     color: rgb(21 129 186);
-    font-weight: 100;
+    font-weight: 300;
+  }
+
+  .page-portfolioentry h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color: rgb(21 129 186);
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    margin-top: 20;
+    -webkit-transform: rotate(90deg) 
+    
+    
   }
 
   .page-portfolioentry p {
-    font-family: 'Helvetica 25 UltraLight', sans-serif; 
+    font-family: 'Helvetica Neue', sans-serif;
     color: rgb(21 129 186);
-    font-weight: 100;
+    font-weight: 300;
     max-width: 40em;
     margin-left: auto;
     margin-right: auto;
