@@ -193,7 +193,7 @@ img {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 500;
     position: absolute;
-    top: 6px;
+    top: 1px;
     right: 16px;
     transform: rotate(90deg) translateX(100%);
     border: 1px solid red;
@@ -216,6 +216,11 @@ img {
 
   .shimmyup-medium {
     margin-top: -15vw;
+    border: 0px solid red;
+  }
+
+  .shimmyup-medium2 {
+    margin-top: 10vw;
     border: 0px solid red;
   }
 
