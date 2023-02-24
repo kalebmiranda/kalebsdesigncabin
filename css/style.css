@@ -176,37 +176,34 @@ img {
 
   .page-portfolioentry h1 {
     display: inline-block;
-    border: 3px solid rgb(21 129 186);
+    border: 3px solid rgb(0, 0, 0);
     padding: .5em;
     text-transform: uppercase;
     margin-bottom: 0;
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 700;
-    color: rgb(21 129 186);
   }
 
   .page-portfolioentry h2 {
     font-family: 'Helvetica Neue', sans-serif;
-    color: rgb(21 129 186);
     font-weight: 300;
   }
 
   .page-portfolioentry h3 {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 500;
-    color: rgb(21 129 186);
     position: absolute;
-    top: 8px;
+    top: 6px;
     right: 16px;
-    margin-top: 20;
-    -webkit-transform: rotate(90deg) 
+    transform: rotate(90deg) translateX(100%);
+    border: 1px solid red;
+    transform-origin: right top;
     
-    
+     
   }
 
   .page-portfolioentry p {
     font-family: 'Helvetica Neue', sans-serif;
-    color: rgb(21 129 186);
     font-weight: 300;
     max-width: 40em;
     margin-left: auto;
@@ -221,6 +218,28 @@ img {
     margin-top: -15vw;
     border: 0px solid red;
   }
+
+  .page-portfolioentry.photomontage {
+    color: rgb(255, 255, 255);
+    background-color: black;
+
+  }
+
+  .page-portfolioentry.photomontage h1 {
+    border-color:rgb(255, 255, 255);
+
+  }
+
+  .page-portfolioentry.magazinecomposition {
+    color: rgb(21, 129, 186);
+
+  }
+
+  .page-portfolioentry.magazinecomposition h1 {
+    border-color:rgb(21, 129, 186);
+
+  }
+
 
   /* FANCYBOX STYLING */
 
