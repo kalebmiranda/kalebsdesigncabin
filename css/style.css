@@ -89,8 +89,8 @@ img {
     padding: .5em;
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
-    gap: 30px;
+    justify-content: center;
+    gap: 27px;
   }
   
 /* SITE-HERO */
