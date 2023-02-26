@@ -69,7 +69,7 @@ img {
   .site-header a{
     color: #E1E57D;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 27px;
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 500;
   }
@@ -86,10 +86,11 @@ img {
   
   .site-nav ul{
     margin: 0;
-    padding: 1em;
+    padding: .5em;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    gap: 30px;
   }
   
 /* SITE-HERO */
