@@ -106,12 +106,13 @@ img {
 /* SITE-FOOTER */
 
 .site-footer{
-  background: #0c0c0c;
-  color: white;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 27px;
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: 500;
+  border-top: #00000;
 }
 
 .site-footer ul {
@@ -122,6 +123,9 @@ img {
   height: 100%;
   min-height: 50px;
   padding: .25em;
+  padding-bottom: 2em;
+  border-top: 3.5px solid black;
+  
   
 }
 
