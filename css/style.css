@@ -31,6 +31,7 @@ body{
 body {
   font-size: 100%;
   line-height: 1.4;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 h1, h2, h3, p {
@@ -59,7 +60,31 @@ img {
   height: auto;
 }
 
+/* SITE LAYOUT */
 
+/* CONTAINER */
+.container {
+  background: pink;max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* SEMANTIC GRID SYSTEM */
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+    gap: 2em;
+    background: yellow;
+  }
+
+  .row .column {
+  background: aqua;
+  border: 1px solid red;
+  }
+
+  .row .column.one-half {
+    width: 50%;
+  }
+}
   /* SITE-HEADER */
   
   .site-header{
@@ -70,7 +95,7 @@ img {
     color: #E1E57D;
     text-decoration: none;
     font-size: 27px;
-    font-family: 'Helvetica Neue', sans-serif;
+    
     font-weight: 500;
   }
   .site-header .site-id{
@@ -90,9 +115,20 @@ img {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 27px;
+  }
+
+  .site-nav li:first-child {
+    border-right: 3px solid #E1E57D;
   }
   
+  .site-nav li {
+  }
+
+  .site-nav a {
+    display: block;
+    line-height: 1;
+    margin: 0 20px 0 20px;
+  }
 /* SITE-HERO */
 
 .hero {
@@ -110,9 +146,8 @@ img {
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 27px;
-  font-family: 'Helvetica Neue', sans-serif;
   font-weight: 500;
-  border-top: #00000;
+  border-top: #000000;
 }
 
 .site-footer ul {
@@ -201,6 +236,7 @@ img {
 /* PAGE-PORTFOLIOENTRY */
   .page-portfolioentry {
     text-align: center;
+    padding: 0 2em 2em 2em;
   }
 
   .page-portfolioentry h1 {
@@ -209,17 +245,14 @@ img {
     padding: .5em;
     text-transform: uppercase;
     margin-bottom: 0;
-    font-family: 'Helvetica Neue', sans-serif;
     font-weight: 700;
   }
 
   .page-portfolioentry h2 {
-    font-family: 'Helvetica Neue', sans-serif;
     font-weight: 300;
   }
 
   .page-portfolioentry h3 {
-    font-family: 'Helvetica Neue', sans-serif;
     font-weight: 500;
     position: absolute;
     top: 1px;
@@ -232,7 +265,6 @@ img {
   }
 
   .page-portfolioentry p {
-    font-family: 'Helvetica Neue', sans-serif;
     font-weight: 300;
     max-width: 40em;
     margin-left: auto;
@@ -264,6 +296,10 @@ img {
 
   }
 
+  .page-portfolioentry.photomontage img {
+    border-radius: .75%;
+  }
+
   .page-portfolioentry.magazinecomposition {
     color: rgb(21, 129, 186);
 
@@ -290,3 +326,9 @@ img {
     height: 90%;
   }
 
+  /* CONTACT */
+
+  .contact {
+
+
+  }
