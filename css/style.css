@@ -82,6 +82,7 @@ img {
   .row .column.one-half {
     width: 50%;
   }
+  
 }
 
   .row .column.column.one-half h1 {
@@ -148,7 +149,7 @@ img {
 
   /* MAIN */
   main {
-    min-height: calc(100vh - 6em);
+    min-height: calc(100vh - 9em);
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -192,11 +193,12 @@ img {
 
 /* THUMBGRID */
 .thumbgrid{
-  margin: 0;
+  margin: 0 auto;
   padding:0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  max-width: 1150px;
 }
 
 .thumbgrid li {
@@ -230,6 +232,7 @@ img {
   display: block;
   max-width: none;
   width: 100%;
+  border-radius: .75%;
   
 }
 
