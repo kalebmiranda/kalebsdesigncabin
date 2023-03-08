@@ -138,8 +138,6 @@ img {
     border-right: 3px solid #E1E57D;
   }
   
-  .site-nav li {
-  }
 
   .site-nav a {
     display: block;
@@ -157,7 +155,6 @@ img {
 /* SITE-HERO */
 
 .hero {
-  background: black;
   padding: 6.5vh 1em;
   display: grid; 
   place-items: center;
