@@ -394,3 +394,12 @@ img {
 
 
   }
+
+/* HOMEPAGE STYLING */
+
+.page-home .hero .site-nav a {
+  color: #000000;
+  font-weight: 500;
+  font-size: 27px;
+  text-decoration: none;
+}
