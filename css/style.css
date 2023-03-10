@@ -89,22 +89,7 @@ img {
   
 }
 
-  .row .column.column.one-half h1 {
-    
-    font-size: 70px;
-    color: transparent;
-	  -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-    }
-
-  .row .column.column.one-half h2 {
-    font-size: 35px;
-    font-weight: 500;
-    }
   
-  .row .column.column.one-half p {
-    font-weight: 500;
-    }
 
 
   /* SITE-HEADER */
@@ -397,12 +382,25 @@ img {
     height: 90%;
   }
 
-  /* CONTACT */
+  /* CONTACT PAGE STYLING*/
 
-  .contact {
+  .page-contact h1 {
+    
+    font-size: 70px;
+    color: transparent;
+	  -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    }
 
-
-  }
+  .page-contact h2 {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    }
+  
+  .page-contact p {
+    font-weight: 500;
+    }
 
 /* HOMEPAGE STYLING */
 
