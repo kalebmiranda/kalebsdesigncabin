@@ -31,7 +31,7 @@ body{
 body {
   font-size: 100%;
   line-height: 1.4;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: "neue-haas-grotesk-text", sans-serif;
 }
 
 h1, h2, h3, p {
@@ -42,17 +42,21 @@ h1, h2, h3, p {
 h1 {
   font-size: 3em;
   line-height: 1em;
+  font-family: "neue-haas-grotesk-text", sans-serif;
 }
 
 h2 {
   font-size: 2.25em;
   line-height: 1em;
+  font-family: "neue-haas-grotesk-display", sans-serif;
 }
 
 h3 {
   font-size: 1.75em;
   line-height: 1em;
+  font-family: "neue-haas-grotesk-text", sans-serif;
 }
+
 
 /* RESPONSIVE IMAGES */
 img {
@@ -86,6 +90,7 @@ img {
 }
 
   .row .column.column.one-half h1 {
+    
     font-size: 70px;
     color: transparent;
 	  -webkit-text-stroke-width: 2px;
@@ -112,8 +117,9 @@ img {
     color: #E1E57D;
     text-decoration: none;
     font-size: 27px;
-    
+    font-family: 'neue-haas-grotesk-text', sans-serif;
     font-weight: 500;
+    font-style: normal;
   }
   .site-header .site-id{
     position: absolute;
@@ -167,6 +173,8 @@ img {
   background: #ffffff;
   color: rgb(0, 0, 0);
   text-decoration: none;
+  font-family: 'neue-haas-grotesk-text', sans-serif;
+  font-style: normal;
   font-size: 27px;
   font-weight: 500;
   border-top: #000000;
@@ -273,7 +281,7 @@ img {
   }
 
   .page-portfolioentry h2 {
-    font-weight: 300;
+    font-weight: 400;
   }
 
   .page-portfolioentry h3 {
@@ -349,6 +357,7 @@ img {
     left: 16px;
     transform: rotate(-90deg) translate(-50%, -100%);
     transform-origin: left top;
+    font-weight: 500;
   }
 
   .page-portfolioentry.tourismlogo img {
@@ -399,7 +408,8 @@ img {
 
 .page-home .hero .site-nav a {
   color: #000000;
-  font-weight: 500;
-  font-size: 27px;
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  font-weight: 600;
+  font-size: 70px;
   text-decoration: none;
 }
