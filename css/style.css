@@ -276,7 +276,9 @@ img {
     right: 16px;
     transform: rotate(90deg) translateX(100%);
     transform-origin: right top;
-    }
+    
+     
+}
 
   .page-portfolioentry p {
     font-weight: 400;
