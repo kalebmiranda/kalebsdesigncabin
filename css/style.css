@@ -275,7 +275,7 @@ img {
     top: 1px;
     right: 16px;
     transform: rotate(90deg) translateX(100%);
-    border: 1px solid red;
+    border: 0px solid red;
     transform-origin: right top;
     
      
