@@ -98,7 +98,8 @@ img {
     background: #0c0c0c;
     color: white;
   }
-  .site-header a{
+
+  .site-header a {
     color: #E1E57D;
     text-decoration: none;
     font-size: 27px;
@@ -279,7 +280,7 @@ img {
     transform-origin: right top;
     
      
-  }
+}
 
   .page-portfolioentry p {
     font-weight: 400;
@@ -358,13 +359,20 @@ img {
     padding-left: 3em;
   }
 
-  /* .page-portfolioentry.tourismlogo .twosketches div:first-of-type {
-    flex-grow: 2;
+
+  .page-portfolioentry.brandidentity {
+    color: rgb(255, 255, 255);
+    background-color: #E47E68;
   }
 
-  .page-portfolioentry.tourismlogo .twosketches div:last-of-type {
-    flex-grow: 1;
-  } */
+  .page-portfolioentry.brandidentity h1 {
+    border-color:rgb(255, 255, 255);
+  }
+
+  .page-portfolioentry.brandidentity img {
+    border-radius: .75%;
+    margin: 3em auto;
+  }
 
 
   /* FANCYBOX STYLING */
