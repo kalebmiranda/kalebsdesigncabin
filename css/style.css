@@ -374,6 +374,23 @@ img {
     margin: 3em auto;
   }
 
+  .page-portfolioentry.booktrilogy {
+    color: #333333;
+  }
+
+  .page-portfolioentry.booktrilogy img {
+    border-radius: .75%;
+    margin: 3em auto;
+  }
+
+  .page-portfolioentry.booktrilogy .bosketmentions {
+    display: grid;
+    grid-template-columns: 64.25% 34.75%;
+    gap: 5%;
+    position: relative;
+    padding-left: 3em;
+  }
+
 
   /* FANCYBOX STYLING */
 
