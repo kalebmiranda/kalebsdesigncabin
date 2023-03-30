@@ -127,8 +127,10 @@ img {
   }
 
   .site-nav li:first-child {
-    border-right: 3px solid #E1E57D;
+    border-right: 7px solid #000000;
   }
+
+ 
   
 
   .site-nav a {
@@ -436,4 +438,21 @@ img {
   font-weight: 600;
   font-size: 70px;
   text-decoration: none;
+  scroll-behavior: smooth;
+
+  
+
 }
+
+.page-home .hero .site-nav a:hover {
+  background-color: #E1E57D;
+  padding: 3px; 
+  color: white;
+}
+ /* CONTACT */
+
+.page-contact .site-nav  li:first-child {
+    border-right: 3px solid #E1E57D;
+  }
+
+ 
