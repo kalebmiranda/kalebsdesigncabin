@@ -21,7 +21,7 @@
 
 <body class="page-home">
     <header class=site-header>
-        <h1>Kaleb's Design Cabin</h1>
+        
         
         <div class="site-id">
         
@@ -31,11 +31,11 @@
 
     <main>
       <section class="hero">
-        <img src="img/cabintriallogo.png" alt="photo of the checklist book cover flat" width="620" height="80">
+        <img src="img/kdclogo-black.png" alt="photo of the checklist book cover flat" width="300" height="300">
         <nav class="site-nav">
         <ul>
-            <li><a href="#works">WORKS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="#works" class="button">WORKS</a></li>
+            <li><a href="contact.html" class="button">CONTACT</a></li>
 
         </ul>
         </nav>    
@@ -139,5 +139,14 @@
         
     </main>
     <footer></footer>
+
+    <!--SECTION SCROLL BY CHRIS FERDINANDI: https://github.com/cferdinandi/smooth-scroll -->
+  <script src="js/smooth-scroll.polyfills.min.js"></script>
+  <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+          speed: 100,
+          speedAsDuration: true
+      });
+  </script>
 </body>
 </html>
