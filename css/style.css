@@ -68,15 +68,16 @@ img {
 
 /* CONTAINER */
 .container {
-  max-width: 1400px;
+  max-width: 1150px;
   margin: 0 auto;
+  padding: 0 1em;
 }
 
 /* SEMANTIC GRID SYSTEM */
 @media (min-width: 768px) {
   .row {
     display: flex;
-    gap: 12em;
+    gap: 10%;
   }
 
   .row .column {
@@ -150,9 +151,11 @@ img {
 
 .hero {
   padding: 6.5vh 1em;
-  display: grid; 
-  place-items: center;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  flex-direction:column;
 }
 
 /* SITE-FOOTER */
@@ -178,7 +181,7 @@ img {
   padding: .25em;
   padding-bottom: 2em;
   border-top: 3.5px solid black;
-  
+  text-align:center;
   
 }
 
@@ -412,47 +415,107 @@ img {
 
   /* CONTACT PAGE STYLING*/
 
-  .page-contact h1 {
-    
-    font-size: 70px;
-    color: transparent;
-	  -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-    }
-
-  .page-contact h2 {
-    font-family: "neue-haas-grotesk-text", sans-serif;
-    font-size: 35px;
-    font-weight: 500;
-    }
   
-  .page-contact p {
-    font-weight: 500;
-    }
 
 /* HOMEPAGE STYLING */
+
+.page-home .hero .site-nav {
+  margin-top: 2em;
+}
+
 
 .page-home .hero .site-nav a {
   color: #000000;
   font-family: 'neue-haas-grotesk-display', sans-serif;
   font-weight: 600;
-  font-size: 70px;
+  font-size: clamp(22px, 7vw, 70px);
   text-decoration: none;
   scroll-behavior: smooth;
-
+  padding: 3px; 
   
-
 }
 
 .page-home .hero .site-nav a:hover {
   background-color: #E1E57D;
-  padding: 3px; 
+  
   color: white;
 }
  /* CONTACT */
+
+ .contact {
+  padding-top: 2em;
+}
+
+.contact h1 {
+  
+  font-size: 60px;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+
+  }
+
+.contact h2 {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  }
+
+.contact p {
+  font-weight: 500;
+  }
 
 .page-contact .site-nav  li:first-child {
     border-right: 3px solid #E1E57D;
   }
 
+/* HERO CABIN ANIMATION */
+
+.cabin {
+  width: 300px;
+  height:360px;
+  overflow:hidden;
+  position: relative;
+}
+
+.cabin img {
+  display: block;
+  position: absolute;
+  animation-name: cabin-animation;
+  animation-duration: .75s;
+  animation-timing-function: ease-out;
+  animation-delay: .75s;
+  animation-fill-mode: forwards;
+  transform: translate(0,100%);
+}
+
+@keyframes cabin-animation {
+  0% {
+    transform: translate(0,100%);
+  } 
+  100% {
+    transform: translate(0,0);
+  }
+}
  
+.sign {
+  background: rgb(0, 0, 0);
+  width: 300px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 24px;
+  font-weight: 500;
+  animation-name: sign-animation;
+  animation-duration: .5s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes sign-animation {
+  0% {
+    transform: translate(-100%,0);
+  } 
+  100% {
+    transform: translate(0,0);
+  }
+}
