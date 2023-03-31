@@ -420,7 +420,7 @@ img {
 /* HOMEPAGE STYLING */
 
 .page-home .hero .site-nav {
-  margin-top: 2em;
+  margin-top: 4.5em;
 }
 
 
@@ -443,7 +443,8 @@ img {
  /* CONTACT */
 
  .contact {
-  padding-top: 2em;
+  padding-top: 7em;
+  padding-bottom: 7em;
 }
 
 .contact h1 {
@@ -472,8 +473,8 @@ img {
 /* HERO CABIN ANIMATION */
 
 .cabin {
-  width: 300px;
-  height:360px;
+  width: 270px;
+  height:330px;
   overflow:hidden;
   position: relative;
 }
@@ -500,11 +501,11 @@ img {
  
 .sign {
   background: rgb(0, 0, 0);
-  width: 300px;
+  width: 270px;
   color: #ffffff;
   text-align: center;
-  margin-top: 5px;
-  font-size: 24px;
+  margin-top: 0px;
+  font-size: 22px;
   font-weight: 500;
   animation-name: sign-animation;
   animation-duration: .5s;
@@ -514,6 +515,35 @@ img {
 @keyframes sign-animation {
   0% {
     transform: translate(-100%,0);
+  } 
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+/* NAVBUTTONS ANIMATION */
+
+.navbuttons {
+  width: 800px;
+  height:80px;
+  overflow: hidden;
+  position: relative;
+}
+
+.navbuttons img {
+  display: block;
+  position: absolute;
+  animation-name: navbuttons-animation;
+  animation-duration: .75s;
+  animation-timing-function: ease-out;
+  animation-delay: .75s;
+  animation-fill-mode: forwards;
+  transform: translate(0,100%);
+}
+
+@keyframes navbuttons-animation {
+  0% {
+    transform: translate(0,100%);
   } 
   100% {
     transform: translate(0,0);
