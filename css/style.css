@@ -437,7 +437,6 @@ img {
 
 .page-home .hero .site-nav a:hover {
   background-color: #E1E57D;
-  
   color: white;
 }
  /* CONTACT */
@@ -469,6 +468,36 @@ img {
 .page-contact .site-nav  li:first-child {
     border-right: 3px solid #E1E57D;
   }
+
+/* ANIMATE CONTACT ON SCROLL */
+
+#contact.scroll-triggered 
+  [data-sectionstate=inactive] .one-half-column {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+    opacity: 0;
+}
+
+#contact.scroll-triggered[data-sectionstate=inactive] .one-half-column {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+  opacity: 0;
+}
+
+#contact.scroll-triggered[data-sectionstate=active] .one-half-column {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all 1s ease-out 0.5s;
+  transition: all 1s ease-out 0.5s;
+}
+#contact.scroll-triggered[data-sectionstate=active] .one-half-column {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all 1s ease-out 0.5s;
+  transition: all 1s ease-out 0.5s;
+}
 
 /* HERO CABIN ANIMATION */
 
@@ -524,26 +553,30 @@ img {
 /* NAVBUTTONS ANIMATION */
 
 .navbuttons {
-  width: 800px;
-  height:80px;
+  /* min-width: 300px;  */
+  height: 7vw;
+  min-height: 5em;
+  max-height: 7em;
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
-.navbuttons img {
-  display: block;
+.navbuttons ul {
+  /* display: block; */
   position: absolute;
   animation-name: navbuttons-animation;
   animation-duration: .75s;
   animation-timing-function: ease-out;
-  animation-delay: .75s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
-  transform: translate(0,100%);
+  transform: translate(0,130%);
+  width: 100%;
 }
 
 @keyframes navbuttons-animation {
   0% {
-    transform: translate(0,100%);
+    transform: translate(0,130%);
   } 
   100% {
     transform: translate(0,0);

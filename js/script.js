@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const myobserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.setAttribute("data-sectionstate", "active");
+            entry.target.setAttribute("data-one-half-column", "active");
         } else {
-            entry.target.setAttribute("data-sectionstate", "inactive");
+            entry.target.setAttribute("data-one-half-column", "inactive");
         }
         });
     });
