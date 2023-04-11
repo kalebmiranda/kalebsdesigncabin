@@ -188,6 +188,7 @@ img {
 
 
 /* THUMBGRID */
+
 .thumbgrid{
   margin: 0 auto;
   padding:0;
@@ -261,6 +262,7 @@ img {
     text-align: center;
     padding: 0 2em 2em 2em;
     padding-top: 4em;
+    padding-bottom: 4em;
   }
 
   .page-portfolioentry h1 {
@@ -284,6 +286,8 @@ img {
     transform: rotate(90deg) translateX(100%);
     border: 0px solid red;
     transform-origin: right top;
+    padding: 0 1em;
+    
     
      
 }
@@ -297,6 +301,7 @@ img {
 
   .page-portfolioentry img {
     display: block;
+    padding: 0 10em;
   }
 
   .shimmyup-medium {
@@ -322,6 +327,7 @@ img {
 
   .page-portfolioentry.photomontage img {
     border-radius: .75%;
+    
   }
 
   .page-portfolioentry.magazinecomposition {
@@ -355,6 +361,7 @@ img {
   .page-portfolioentry.tourismlogo img {
     border-radius: .75%;
     margin: 3em auto;
+    padding: 0 4em;
   }
 
   .page-portfolioentry.tourismlogo .twosketches {
@@ -378,6 +385,9 @@ img {
   .page-portfolioentry.brandidentity img {
     border-radius: .75%;
     margin: 3em auto;
+    padding: 0 0em;
+
+
   }
 
   .page-portfolioentry.booktrilogy {
@@ -387,6 +397,8 @@ img {
   .page-portfolioentry.booktrilogy img {
     border-radius: .75%;
     margin: 3em auto;
+    padding: 2em 4em;
+    
   }
 
   .page-portfolioentry.booktrilogy .bosketmentions {
