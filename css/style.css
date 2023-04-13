@@ -101,7 +101,7 @@ img {
   }
 
   .site-header a {
-    color: #E1E57D;
+    color: #e5d97d;
     text-decoration: none;
     font-size: 27px;
     font-family: 'neue-haas-grotesk-text', sans-serif;
@@ -185,7 +185,14 @@ img {
   
 }
 
-
+/* WORKS */
+.works h3 {
+  align: right;
+  font-family: 'neue-haas-grotesk-text', sans-serif;
+  font-style: normal;
+  font-size: 27px;
+  font-weight: 500;
+}
 
 /* THUMBGRID */
 
@@ -197,6 +204,8 @@ img {
   flex-wrap: wrap;
   max-width: 1150px;
 }
+
+
 
 .thumbgrid li {
   width: 50%;
@@ -327,8 +336,11 @@ img {
 
   .page-portfolioentry.photomontage img {
     border-radius: .75%;
+    margin: 3em auto;
+    padding: 0em 0em;
     
-  }
+}
+  
 
   .page-portfolioentry.magazinecomposition {
     color: rgb(21, 129, 186);
@@ -448,7 +460,7 @@ img {
 }
 
 .page-home .hero .site-nav a:hover {
-  background-color: #E1E57D;
+  background-color: #f4f87a;
   color: white;
 }
  /* CONTACT */
