@@ -81,10 +81,6 @@ img {
     margin-bottom: 5%;
   }
 
-  .row .column {
-  
-  }
-
   .row .column.one-half {
     width: 50%;
   }
@@ -421,7 +417,7 @@ img {
   .page-portfolioentry.brandidentity img {
     border-radius: .75%;
     margin: 3em auto;
-    padding: 0 0em;
+    padding: 0em 0em;
 
 
   }
@@ -442,7 +438,7 @@ img {
   }
 
   .page-portfolioentry.booktrilogy .bosketmentions h3{
-    right: -1.3em;
+    right: -1.35em;
   }
 
   /* FANCYBOX STYLING */
