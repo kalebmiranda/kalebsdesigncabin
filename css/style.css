@@ -81,8 +81,16 @@ img {
     margin-bottom: 5%;
   }
 
+  .row .align-top {
+  align-items: flex-start;
+  border-top: solid 5px red;
+  padding: 5em 0em;
+}
+  
+
   .row .column.one-half {
     width: 50%;
+    display: block;
   }
 
   .row .column.one-third {
