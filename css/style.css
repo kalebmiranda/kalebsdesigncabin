@@ -75,11 +75,10 @@ img {
 
 /* SEMANTIC GRID SYSTEM */
 
-.row .align-top {
-  align-items: flex-start;
-  border-top: solid 5px red;
-  padding: 5em 0em;
+.row.border-top {
+   border-top: solid 5px red; 
 }
+
 @media (min-width: 768px) {
   .row {
     display: flex;
@@ -115,7 +114,25 @@ img {
 
 }
 
-  
+/* HELPERS */
+
+  hr.line{
+    border: none;
+    border: 1px solid white;
+    margin: 3em 0;
+  }
+
+  hr.line.darkgray {
+    border: none;
+    border: 1px solid #333333;
+    margin: 3em 0;
+  }
+
+  hr.line.trueblue {
+    border: none;
+    border: 1px solid #1D81C4;
+    margin: 3em 0;
+  }
 
 
   /* SITE-HEADER */
@@ -451,6 +468,7 @@ img {
 
   .page-portfolioentry.booktrilogy .bosketmentions {
     position: relative;
+    overflow: hidden;
   }
 
   .page-portfolioentry.booktrilogy .bosketmentions h3{
