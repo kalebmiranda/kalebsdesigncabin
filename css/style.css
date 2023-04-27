@@ -497,7 +497,6 @@ img {
     height: 90%;
   }
 
-  /* CONTACT PAGE STYLING*/
 
   
 
@@ -506,7 +505,6 @@ img {
 .page-home .hero .site-nav {
   margin-top: 4.5em;
 }
-
 
 .page-home .hero .site-nav a {
   color: #000000;
@@ -552,6 +550,10 @@ img {
 .page-contact .site-nav  li:first-child {
     border-right: 3px solid #E1E57D;
   }
+
+.contact img {
+  border-radius: .75%;
+}
 
 /* ANIMATE CONTACT ON SCROLL */
 
