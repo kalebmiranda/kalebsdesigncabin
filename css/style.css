@@ -482,6 +482,12 @@ img {
     background-color: black;
   }
 
+  .page-portfolioentry.psaannouncement img {
+    border-radius: .75%;
+    margin: 3em auto;
+    padding: 0em 0em;
+  }
+
   /* FANCYBOX STYLING */
 
   .fancybox__content { 
