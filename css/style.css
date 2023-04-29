@@ -138,7 +138,7 @@ img {
 
   hr.line.lime{
     border: none;
-    border: 1px solid rgb(39, 187, 19);
+    border: 1px solid rgb(255, 207, 34);
     margin: 3em 0;
   }
 
@@ -484,8 +484,12 @@ img {
   }
 
   .page-portfolioentry.psaannouncement {
-    color: greenyellow;
+    color: rgb(34, 133, 255);
     background-color: rgb(0, 0, 0);
+  }
+
+  .page-portfolioentry.psaannouncement h1 {
+    border-color: rgb(255, 207, 34);
   }
 
   .page-portfolioentry.psaannouncement img {
