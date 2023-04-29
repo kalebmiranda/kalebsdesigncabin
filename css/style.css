@@ -136,7 +136,7 @@ img {
     margin: 3em 0;
   }
 
-  hr.line.lime{
+  hr.line.yellow {
     border: none;
     border: 1px solid rgb(255, 207, 34);
     margin: 3em 0;
@@ -484,7 +484,7 @@ img {
   }
 
   .page-portfolioentry.psaannouncement {
-    color: rgb(34, 133, 255);
+    color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
   }
 
