@@ -335,6 +335,7 @@ img {
 }
 
 /* PAGE-PORTFOLIOENTRY */
+
   .page-portfolioentry {
     text-align: center;
     padding: 4em 3em 4em 3em;
@@ -437,6 +438,12 @@ img {
     border-color: #1D81C4;
   }
 
+  .page-portfolioentry.magazinecomposition img {
+    border-radius: .75%;
+    margin: 3em auto;
+    padding: 0 0em;
+  }
+
   .page-portfolioentry.tourismlogo h3.twosketches {
     border: none;
     top: 50%;
@@ -523,15 +530,21 @@ img {
 
   .fancybox__content { 
     padding: 0; 
-    
   }
 
   .fancybox__slide { 
     padding: 2em; 
+    
+  }
+  .fancybox__slide .background {
+    
   }
 
   .fancybox__carousel .fancybox__slide.has-iframe .fancybox__content {
     height: 90%;
+    
+    
+    
   }
 
 
