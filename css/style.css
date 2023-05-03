@@ -34,7 +34,7 @@ body {
   font-family: "neue-haas-grotesk-text", sans-serif;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
   margin: 0 0 0.5wm 0;
 }
 
@@ -53,6 +53,13 @@ h2 {
 
 h3 {
   font-size: 1.75em;
+  line-height: 1em;
+  font-family: "neue-haas-grotesk-text", sans-serif;
+}
+
+
+h4 {
+  font-size: 1.25em;
   line-height: 1em;
   font-family: "neue-haas-grotesk-text", sans-serif;
 }
@@ -384,12 +391,12 @@ img {
   }
 
   .shimmyup-medium {
-    margin-top: -15vw;
+    margin-top: -10%;
     border: 0px solid red;
   }
 
   .shimmyup-medium2 {
-    margin-top: 10vw;
+    margin-top: 10%;
     border: 0px solid red;
   }
 
@@ -430,7 +437,7 @@ img {
     border-color: #1D81C4;
   }
 
-  .page-portfolioentry.tourismlogo h3.sketches {
+  .page-portfolioentry.tourismlogo h3.twosketches {
     border: none;
     top: 50%;
     right: auto;
@@ -438,21 +445,24 @@ img {
     transform: rotate(-90deg) translate(-50%, -100%);
     transform-origin: left top;
     font-weight: 500;
+    margin: 10em auto;
     
   }
 
   .page-portfolioentry.tourismlogo img {
     border-radius: .75%;
     margin: 3em auto;
-    padding: 0 4em;
+    padding: 0 0em;
+
   }
 
-  .page-portfolioentry.tourismlogo .twosketches {
-    display: grid;
-    grid-template-columns: 64.25% 34.75%;
-    gap: 5%;
-    position: relative;
-    
+  @media (min-width: 768px) {
+    .page-portfolioentry.tourismlogo .twosketches {
+      display: grid;
+      grid-template-columns: 64.25% 34.75%;
+      gap: 5%;
+      position: relative;
+    } 
   }
 
 
@@ -469,8 +479,7 @@ img {
     border-radius: .75%;
     margin: 3em auto;
     padding: 0em 0em;
-
-
+    position: relative;
   }
 
   .page-portfolioentry.booktrilogy {
@@ -542,13 +551,15 @@ img {
   text-decoration: none;
   scroll-behavior: smooth;
   padding: 3px; 
-  
 }
 
 .page-home .hero .site-nav a:hover {
   background-color: #f4f87a;
   color: rgb(255, 255, 255);
+  border-radius: 2px;
+  padding: 5px 5px;
 }
+
  /* CONTACT */
 
  .contact {
@@ -574,6 +585,24 @@ img {
 .contact p {
   font-weight: 500;
   }
+
+.contact h4  {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  }
+
+.contact a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.contact a:hover {
+  background-color: #f4f87a;
+  color: rgb(255, 255, 255);
+  border-radius: 2px;
+  padding: 3px 3px;
+}
 
 .page-contact .site-nav  li:first-child {
     border-right: 3px solid #E1E57D;
